@@ -4,7 +4,7 @@ import studyPlan from '../models/StudyPlan.js';
 
 export const createStudyPlan = async (req, res) => {
 
-    const { planName, startDate, endDate, description, specialConstrains, aiSuggestions } = req.body;
+    const { planName, startDate, endDate, description, specialConstraints, aiSuggestion } = req.body;
 
 
 
@@ -28,9 +28,9 @@ export const createStudyPlan = async (req, res) => {
 
             description,
 
-            specialConstrains,
+            specialConstraints,
 
-            aiSuggestions
+            aiSuggestion
 
         });
 
@@ -68,7 +68,7 @@ export const editStudyPlan = async (req, res) => {
 
     const { id } = req.params;
 
-    const { planName, startDate, endDate, description, specialConstrains, aiSuggestions } = req.body;
+    const { planName, startDate, endDate, description, specialConstraints, aiSuggestion } = req.body;
 
 
 
@@ -94,9 +94,9 @@ export const editStudyPlan = async (req, res) => {
 
             description,
 
-            specialConstrains,
+            specialConstraints,
 
-            aiSuggestions
+            aiSuggestion
 
         }, { new: true });
 

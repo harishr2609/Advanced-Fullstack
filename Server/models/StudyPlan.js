@@ -12,9 +12,9 @@ const studyPlanSchema = new mongoose.Schema({
 
     description: String,
 
-    specialConstrains: String,
+    specialConstraints: String,
 
-    aiSuggestions: String,
+    aiSuggestion: String,
 
 },{ timestamps: true });
 
